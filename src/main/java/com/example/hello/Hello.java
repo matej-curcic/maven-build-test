@@ -1,9 +1,5 @@
 package com.example;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
 
@@ -12,7 +8,7 @@ import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 
 public class Hello {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         // Start a simple HTTP server
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
 
